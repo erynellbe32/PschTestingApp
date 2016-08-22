@@ -24,11 +24,11 @@ companies who needed it.
 
 | Name | Market | Short Description | Remarks |
 | ---: | :---: | --- | --- |
-| Nonverbal Personality Questionnaire and Five-Factor Nonverbal Personality Questionnaire | Blue coloured | '' | NPQ with Pictures |
-| Manchester Personality Questionnaire | General Population | '' | MPQ |
+| Nonverbal Personality Questionnaire and Five-Factor Nonverbal Personality Questionnaire | Blue coloured | __ | NPQ with Pictures |
+| Manchester Personality Questionnaire | General Population | __ | MPQ |
 | Management Development Questionnaire | Upper Management | Inventory of management competencies | MDQ |
-| BarOn EQ | Intelligent test (EQ) | '' | BarOn EQ |
-| Employee Aptitude Survey | Mental Ability Test | '' | MAT With Timer and 10 sub test |
+| BarOn EQ | Intelligent test (EQ) | __ | BarOn EQ |
+| Employee Aptitude Survey | Mental Ability Test | __ | MAT With Timer and 10 sub test |
 
 ## Build
 
@@ -43,7 +43,7 @@ companies who needed it.
 | Age | _To be automatically computed_ |
 | Today's Date | _To be automatically filled_ |
 | Position | _Show file differences that haven't been staged_ |
-| Company |  _ _ |
+| Company |  __ |
 
 ## Instructions
   1. Use Firebase for NoSQL
