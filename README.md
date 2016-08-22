@@ -46,5 +46,25 @@ companies who needed it.
 | Company |  __ |
 
 ## Instructions
-  1. Use Firebase for NoSQL
-  2. EaselJS for Timed game GUI
+  1. Firebase - Database Queries 
+    * Users by Login
+    * Users by Test
+    * Users by Companies
+  2. EaselJS - Timed game GUI
+  
+## VIEWS
+  1. Login.html
+  2. Nav.html
+  3. Register.html
+  4. Success.html
+  5. Dashboard.hmtl
+
+## SERVICES
+  1. Authentication.js
+  
+## CONTROLLERS
+  1. Registration.js
+  2. Success.js
+
+## ROUTING
+  1. Check routeProvider in App.js 
