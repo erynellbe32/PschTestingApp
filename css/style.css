@@ -14,8 +14,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+fieldset, form, label, legend, caption,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -24,20 +23,29 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  font-size: 90%;
+  font-size: 100%;
   vertical-align: baseline; }
 
 html {
   line-height: 1; }
 
-ol, ul {
-  list-style: none; }
+ul {
+  list-style: none; 
+}
+
+
+.reminder {
+  border-width: 1; }
+  border-spacing: 1; }
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  margin: 2px;
+  border-width: 2; }
+  border-spacing: 1; }
 
-caption, th, td {
+caption, {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
@@ -177,7 +185,6 @@ input[type=radio] {
   width: auto;
 }
 
-
 .ng-enter.ng-enter-active,
 .ng-leave {
   opacity: 1;
@@ -224,7 +231,10 @@ input[type=radio] {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #DC322F; }
+.btn:focus, .btn:hover {
+  background-color: #DC322F;
+  outline: none;
+}
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-color: #859835; background-image: url(../images/icons/icon_checkmark.png); }
@@ -530,6 +540,11 @@ nav li a:hover {
   vertical-align: center;
 }
 
+/**
+ * TO DO: meetings to testings
+ * 
+ */
+
 .meetings {
   padding-top: 10px;
 }
@@ -601,6 +616,24 @@ nav li a:hover {
       -ms-transform: translateY(0px);
        -o-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #777;
+  border-radius: 10px;
+}
+.badge:empty {
+  display: none;
 }
 
 .checkinslist { margin-top: 20px; }

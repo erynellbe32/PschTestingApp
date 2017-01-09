@@ -23,7 +23,7 @@ companies who needed it.
 ## The following are the five tests:
 
 | Name | Market | Short Description | Remarks |
-| --- | --- | :--- | --- |
+| --- | --- | --- | --- |
 | Nonverbal Personality Questionnaire and Five-Factor Nonverbal Personality Questionnaire | Blue coloured | __ | NPQ with Pictures |
 | Manchester Personality Questionnaire | General Population | __ | MPQ |
 | Management Development Questionnaire | Upper Management | Inventory of management competencies | MDQ |
@@ -46,12 +46,12 @@ companies who needed it.
 | Company |  __ |
 
 ## Instructions
-  1. Firebase - Database Queries 
+  1. Firebase - Database Queries
     * Users by Login
     * Users by Test
     * Users by Companies
   2. EaselJS - Timed game GUI
-  
+
 ## VIEWS
   1. Login.html
   2. Nav.html
@@ -61,10 +61,10 @@ companies who needed it.
 
 ## SERVICES
   1. Authentication.js
-  
+
 ## CONTROLLERS
   1. Registration.js
   2. Success.js
 
 ## ROUTING
-  1. Check routeProvider in App.js 
+  1. Check routeProvider in App.js
