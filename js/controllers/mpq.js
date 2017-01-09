@@ -19,25 +19,42 @@ myApp.controller('mpqCtrl',function($scope) {
     };
 */
 
-/*
-   $scope.sumDimension = {
-            'S01' : [0],
-            'S02' : [0],
-            'S03' : [0],
-            'S04' : [0],
-            'S05' : [0],
-            'S06' : [0],
-            'S07' : [0],
-            'S08' : [0],
-            'S09' : [0],
-            'S10' : [0],
-            'S11' : [0],
-            'S12' : [0],
-            'S13' : [0],
-            'S14' : [0]
+    /**
+     * TODO function calls in each row
+     * Scope on each value
+     *
+      */
+
+
+
+ $scope.rawDimensionS01 = [0];
+ $scope.rawDimensionS02 = [0];
+ $scope.rawDimensionS03 = [0];
+ $scope.rawDimensionS04 = [0];
+ $scope.rawDimensionS05 = [0];
+ $scope.rawDimensionS06 = [0];
+ $scope.rawDimensionS07 = [0];
+ $scope.rawDimensionS08 = [0];
+ $scope.rawDimensionS09 = [0];
+ $scope.rawDimensionS10 = [0];
+ $scope.rawDimensionS11 = [0];
+ $scope.rawDimensionS12 = [0];
+ $scope.rawDimensionS13 = [0];
+ $scope.rawDimensionS14 = [0];
+
+
+    $scope.rawSumUp = function () {
+        if (group == s01) {
+            .push(value)
+
+        },
+
+
     };
 
+    $scope.rawSumUp() // calls function (set on each row)
 
+/*
     $scope.summerUpper = function (group,value) {
       .push(value).sumDimension.[(group)],
 
