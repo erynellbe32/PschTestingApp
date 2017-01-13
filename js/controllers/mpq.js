@@ -1,211 +1,66 @@
 myApp.controller('mpqCtrl',function($scope) {
 
 
-
+    /**
+     * TODO
+     * set Scope on each value
+     * 1st function push on scope on after verified submission
+     * 2nd function on maps and reduces array values on next
+     * return values on each scope
+     */
 
 
   /**
-   * Reversing Values
-   * @type {{choicea: number, choiceb: number, choicec: number, choiced: number, choicee: number, choicef: number, choiceg: number, choicei: number, choicej: number}}
-   * ngShow and Nghide condition on Scope Data
-   * -for Refactoring on reverse()
+   * Declaration of Scope Values for each S1-S14
+   * @type {number[]}
    */
-
-
-
- /*   $scope.tstQuest = testQuestions."raw";
-    $scope.loadFromParent = function (tut) {
-        alert('parent index = ' + tut);
-    };
-*/
-
-    /**
-     * TODO function calls in each row
-     * Scope on each value
-     *
-      */
-
-
-
- $scope.rawDimensionS01 = [0];
- $scope.rawDimensionS02 = [0];
- $scope.rawDimensionS03 = [0];
- $scope.rawDimensionS04 = [0];
- $scope.rawDimensionS05 = [0];
- $scope.rawDimensionS06 = [0];
- $scope.rawDimensionS07 = [0];
- $scope.rawDimensionS08 = [0];
- $scope.rawDimensionS09 = [0];
- $scope.rawDimensionS10 = [0];
- $scope.rawDimensionS11 = [0];
- $scope.rawDimensionS12 = [0];
- $scope.rawDimensionS13 = [0];
- $scope.rawDimensionS14 = [0];
+    $scope.rawDimensionS01 = [0];
+    $scope.rawDimensionS02 = [0];
+    $scope.rawDimensionS03 = [0];
+    $scope.rawDimensionS04 = [0];
+    $scope.rawDimensionS05 = [0];
+    $scope.rawDimensionS06 = [0];
+    $scope.rawDimensionS07 = [0];
+    $scope.rawDimensionS08 = [0];
+    $scope.rawDimensionS09 = [0];
+    $scope.rawDimensionS10 = [0];
+    $scope.rawDimensionS11 = [0];
+    $scope.rawDimensionS12 = [0];
+    $scope.rawDimensionS13 = [0];
+    $scope.rawDimensionS14 = [0];
 
 
     $scope.rawSumUp = function () {
-        if (group == s01) {
-            .push(value)
-
-        },
+        if ( $scope.testQuestions.group == 's01') {
+            // pointer
+            $scope.rawDimensionS01.push(value)
+        }
 
 
     };
 
-    $scope.rawSumUp() // calls function (set on each row)
+    $scope.verfiyAnswer = function () {
+        alert("READY TO SUBMIT")
 
-/*
-    $scope.summerUpper = function (group,value) {
-      .push(value).sumDimension.[(group)],
 
+    };
+
+    $scope.allRawSum()// upon verified submission
+
+    /*
+    $scope.getrawSum = function(values) {  // set function on NgRepeat on Results page
+    return values // returns total parameter
+      .map(function(x) { return x.raw; }) // maps length of array
+      .reduce(function(a, b) { return a + b; });  // adds all array values
     };
     */
 
-/* DEPRECATED - plain number only
-    $scope.testValueraw = {
-    "choicea": 1,
-    "choiceb": 2,
-    "choicec": 3,
-    "choiced": 4,
-    "choicee": 5,
-    "choicef": 5,
-    "choiceg": 4,
-    "choicei": 2,
-    "choicej": 1
-    };
-*/
-    // Scope Subgroup refactor to Array Object
-    // Could Be Refactored to Refer to Dim SCope Property
-    // $scope.groupPointerArray = [ S1, S2 , S3 , S4 , S5 , S6 , S7 , S8 , S9 , S10 , S11 , S12 , S13 , S14 ];
 
-
-    /*
-    $scope.addToGroup = function(items) { // ngModel Function to sum instead of showing raw Value
-
-        if testQuestions."raw" = groupPointerArray.find {        // test if array object's value == one value in pointerArray
-
-            // TODO OPTIONS
-            // X IndexOf link with with other .Indexof
-            // X pair with other array
-            // O instead of array use object
-            // key value pair XXXXX
-
-            // use NgInit for expression variable XXXX
-            // use track by index
-
-            // Nested NG REpeat - restructuring table with 2 Ngrepeat expressions
-            // access parent child scopes
-            // http://stackoverflow.com/questions/21453697/angularjs-access-parent-scope-from-child-controller
-
-            // use ngrepeat generated $scope (inspect by ng-inspect and batarang) for sum loop.
-            // use actual ngrepeat $scope for each loop for testQuestions $scope condition on group, push to array, then bind to dimension next page
-
-            // Test Driven Dev showing NGshow and nghide nginit
-
-
-            return testObject == testObject; // adding sub variables ?? then match to dimension?
-            // TODO HOW TO KNOW OR CONNECT GROUP WITH DIMENSION??
-            // x Linked to Values in mpqPriDims.rawGroup
-            // x using groupsPointerArray
-            // x use Filter LimitTo
-
-            // NgInit function -  angular.forEach
-            // refer to function inside data
-            // push to scope
-
-            $scope.rawGroup.push(group); // the push to rawGroup *appropiate Dimension array mpqPriDims.rawGroup
-        }
-
-    };
-*/
-
-
-/*
-  /!**
-   * TODO check sum values
-   * @param values
-   * @returns {*} Sum Total per S"raw"
-   *!/
-
-  $scope.getrawSum = function(values) {  // set function on NgRepeat on Results page
-        return values // returns total parameter
-          .map(function(x) { return x.raw; }) // maps length of array
-          .reduce(function(a, b) { return a + b; });  // adds all array values
-    };
-
-*/
-
-
-/*
-
-    // TODO: For Removal once Run
-    var values = {name: 'misko', gender: 'male'};
-    var log = [];
-    angular.forEach(values, function(value, key) {
-        this.push(key + ': ' + value);
-    }, log);
-    expect(log).toEqual(['name: misko', 'gender: male']);
-
-
-
-    $scope.addScore = function(s1) {
-        $scope.S1s.push(s1);
-        $scope.S1 = {};
-    };
-
-
-    // Steps in
-    $scope.totalScore = function(){
-        var total = 0;
-        for(count=0;
-            count<$scope.testQuestions.raw.length;
-            count++)
-            {
-                total += $scope.s1[count].raw + $scope.s1[count].raw;
-            }
-        return total;
-        };
-
-//TODO FOR REMOVAL SUM
-    $scope.sumByGender = function("raw") {
-        // Here I need to sum by gender
-        var total = 0;
-        for (count = 0; count < $scope.users.length; count++) {
-            if($scope.users[count]."raw" == "raw")
-                total += $scope.users[count].age;
-        }
-        return total;
-    }
-});
-
-*/
-
-
-/*
-
-//TODO: IDEAS- ngClick on forEach Object in testQuestions, add raw value to group class / ngModel
-
-angular.forEach(testQuestions, function(value, key) {
-    if testQuestions."raw" == .this array {
-         $scope.sum"raw"s.push(item)
-             }
-    else ;
-    return total;
-
-*/
-
-
-
-    //TODo Option 2 Ng-model expression
   /**
+   * TODO STEN Array
+   * @type {*[]}
+   * if sumRawValue = min && max {.lenghtArray, return stenvalue == arraylength}
    *
-   * @param items = ngmodel OR var inside ngrepeat
-   * @returns {*}
-   * map is like for each
-   * reduce sums it up
-   * HTML:
-   *    <li ng-repeat="(key, value) in data | groupBy: 'Id'">
-   *      "id": {{key}}, name: {{values[0].name}}, volume: {{getVolumeSum(values)}} </li>
    */
 
 
