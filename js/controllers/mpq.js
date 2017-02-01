@@ -29,6 +29,7 @@ myApp.controller('mpqCtrl',function($scope) {
     $scope.rawDimensionS13 = [0];
     $scope.rawDimensionS14 = [0];
 
+/*
 
     $scope.rawSumUp = function () {
         if ( $scope.testQuestions.group == 's01') {
@@ -46,23 +47,24 @@ myApp.controller('mpqCtrl',function($scope) {
 
     $scope.allRawSum()// upon verified submission
 
-    /*
+    /!*
     $scope.getrawSum = function(values) {  // set function on NgRepeat on Results page
     return values // returns total parameter
       .map(function(x) { return x.raw; }) // maps length of array
       .reduce(function(a, b) { return a + b; });  // adds all array values
     };
-    */
+    *!/
 
 
-  /**
+  /!**
    * TODO STEN Array
    * @type {*[]}
    * if sumRawValue = min && max {.lenghtArray, return stenvalue == arraylength}
    *
-   */
+   *!/
 
 
+*/
 
 
 
