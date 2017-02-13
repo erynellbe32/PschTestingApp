@@ -29,9 +29,10 @@ myApp.controller('mpqCtrl',function($scope) {
     $scope.rawDimensionS13 = [0];
     $scope.rawDimensionS14 = [0];
 
-/*
 
-    $scope.rawSumUp = function () {
+    /*
+
+     $scope.rawSumUp = function () {
         if ( $scope.testQuestions.group == 's01') {
             // pointer
             $scope.rawDimensionS01.push(value)
@@ -65,6 +66,22 @@ myApp.controller('mpqCtrl',function($scope) {
 
 
 */
+
+
+
+// DIRECTIVE
+myApp.directive('groupRaw', [function () {
+    return {
+        restrict: 'A',
+        template: {{}},
+        link: function (scope, iElement, iAttrs) {
+      
+        }
+    };
+}])('mpqCtrl',function($scope) {
+
+
+
 
 
 
