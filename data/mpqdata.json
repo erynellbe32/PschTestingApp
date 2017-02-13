@@ -1,74 +1,4 @@
-myApp.controller('mpqCtrl',function($scope) {
 
-
-    /**
-     * TODO
-     * set Scope on each value
-     * 1st function push on scope on after verified submission
-     * 2nd function on maps and reduces array values on next
-     * return values on each scope
-     */
-
-
-  /**
-   * Declaration of Scope Values for each S1-S14
-   * @type {number[]}
-   */
-    $scope.rawDimensionS01 = [0];
-    $scope.rawDimensionS02 = [0];
-    $scope.rawDimensionS03 = [0];
-    $scope.rawDimensionS04 = [0];
-    $scope.rawDimensionS05 = [0];
-    $scope.rawDimensionS06 = [0];
-    $scope.rawDimensionS07 = [0];
-    $scope.rawDimensionS08 = [0];
-    $scope.rawDimensionS09 = [0];
-    $scope.rawDimensionS10 = [0];
-    $scope.rawDimensionS11 = [0];
-    $scope.rawDimensionS12 = [0];
-    $scope.rawDimensionS13 = [0];
-    $scope.rawDimensionS14 = [0];
-
-/*
-
-    $scope.rawSumUp = function () {
-        if ( $scope.testQuestions.group == 's01') {
-            // pointer
-            $scope.rawDimensionS01.push(value)
-
-        }
-
-
-    };
-
-    $scope.verfiyAnswer = function () {
-        alert("READY TO SUBMIT?")
-    };
-
-    $scope.allRawSum()// upon verified submission
-
-    /!*
-    $scope.getrawSum = function(values) {  // set function on NgRepeat on Results page
-    return values // returns total parameter
-      .map(function(x) { return x.raw; }) // maps length of array
-      .reduce(function(a, b) { return a + b; });  // adds all array values
-    };
-    *!/
-
-
-  /!**
-   * TODO STEN Array
-   * @type {*[]}
-   * if sumRawValue = min && max {.lenghtArray, return stenvalue == arraylength}
-   *
-   *!/
-
-
-*/
-
-
-
-//TODO Array vs Object
 
     $scope.testQuestions = [ // refactoring to array objects, and for key value pairing
         {
@@ -789,6 +719,3 @@ myApp.controller('mpqCtrl',function($scope) {
         "stenArray": [{min:0,max:19},{min:20,max:28},{min:29,max:37},{min:38,max:46},{min:47,max:54},{min:55,max:63},{min:64,max:72},{min:73,max:80},{min:81,max:89},{min:90,max:90}]
             // max 90 ++, 29-17 ?? what??, turned to 37, same for next 18-46
         }
-    ];
-
-});
